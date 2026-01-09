@@ -111,7 +111,15 @@ function runOSA(lines: string[]): Promise<{ code: number; out: string; err: stri
 
     p.stdout.on("data", (d) => (out += d.toString()));
     p.stderr.on("data", (d) => (err += d.toString()));
-    p.on("close", (code) => resolve({ code: code ?? -1, out: out.trim(), err: err.trim() }));
+    
+    p.on("close", (code) => {
+      const result = {
+        code: code !== null && code !== undefined ? code : -1,
+        out: out.trim(),
+        err: err.trim()
+      };
+      resolve(result);
+    });
   });
 }
 
