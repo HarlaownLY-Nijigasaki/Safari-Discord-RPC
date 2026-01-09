@@ -1,0 +1,24 @@
+{
+  "videoHosts": [
+    "youtube.com",
+    "*.youtube.com",
+    "ani.gamer.com.tw"
+  ],
+  "browseHosts": [
+    "reddit.com",
+    "*.reddit.com",
+    "stackoverflow.com",
+    "*.stackoverflow.com"
+  ],
+  "icons": {
+    "*.youtube.com": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/512px-YouTube_full-color_icon_%282017%29.svg.png",
+
+    "ani.gamer.com.tw": "https://images.weserv.nl/?url=https://i2.bahamut.com.tw/anime/logo.svg&w=512&output=png",
+
+    "*.reddit.com": "https://images.weserv.nl/?url=https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/reddit.svg&w=512&output=png",
+
+    
+
+    "default": "https://upload.wikimedia.org/wikipedia/commons/4/45/Internet-icon.png"
+  }
+}
