@@ -10,8 +10,8 @@ It detects the website you are viewing, classifies it as **Watching** (video pla
 
 - Detects the active Safari tab (URL + title)
 - Classifies sites into:
-  - **Watching** → YouTube, 動畫瘋, etc.
-  - **Browsing** → Reddit, StackOverflow, StackExchange, etc.
+  - **Watching** → YouTube, 動畫瘋 
+  - **Browsing** → Reddit, StackOverflow, StackExchange
 - Displays:
   - Activity type (Watching / Browsing)
   - Page title
