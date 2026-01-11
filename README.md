@@ -71,9 +71,22 @@ To run Safari Discord RPC locally:
    ```bash
    touch .env
    ```
+
+   then 
+   ```bash
+   nano .env
+   ```
    inside the .env file, type
     ```bash
    DISCORD_CLIENT_ID=your_discord_application_client_id
+   ```
+
+   then
+   ```bash
+   Ctrl + 0
+   Ctrl + X
+   Press Y 
+   Press Tab
    ```
 
 4. Run the script
@@ -81,6 +94,7 @@ To run Safari Discord RPC locally:
    ```bash
    npx ts-node updateDiscord.ts
    ```
+   For the first time it might ask you a permission on using terminal to do the automation, click agree.
 
 5.	Open Safari and browse or watch something — your Discord status should update automatically.
 ---
