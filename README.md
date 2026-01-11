@@ -11,10 +11,10 @@ It detects the website you are viewing, classifies it as **Watching** (video pla
 Safari Discord RPC connects Safari with Discord Rich Presence.
 
 It reads the active Safari tab using AppleScript, extracts the page URL and title, and then:
-  •	Classifies the site (video platforms → Watching, forums/docs → Browsing).
-  •	Displays the page title in your Discord status.
-  •	Shows a matching site icon (configurable per domain).
-  •	Updates automatically every few seconds.
+	•	Classifies the site (video platforms → Watching, forums/docs → Browsing).
+	•	Displays the page title in your Discord status.
+	•	Shows a matching site icon (configurable per domain).
+	•	Updates automatically every few seconds.
 
 This project is focused on functionality and transparency — everything runs locally and can be customized via sites.json.
 
