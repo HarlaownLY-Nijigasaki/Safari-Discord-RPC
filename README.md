@@ -1,6 +1,3 @@
-# Safari-Discord-RPC
-Show your current Safari browsing or watching activity as Discord Rich Presence on macOS.
-
 # Safari Discord RPC
 
 A macOS tool that shows your current Safari browsing or video activity as Discord Rich Presence.
