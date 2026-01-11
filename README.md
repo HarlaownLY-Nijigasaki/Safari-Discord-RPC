@@ -56,7 +56,7 @@ To run Safari Discord RPC locally:
 1. Clone the repository
 
    ```bash
-   git clone https://github.com/HarlaownLY-Niigasaki/Safari-Discord-RPC.git
+   git clone https://github.com/HarlaownLY-Nijigasaki/Safari-Discord-RPC.git
    cd safari-discord-rpc
    ```
 
