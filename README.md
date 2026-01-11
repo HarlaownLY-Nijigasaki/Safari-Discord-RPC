@@ -85,12 +85,6 @@ To run Safari Discord RPC locally:
 5.	Open Safari and browse or watch something — your Discord status should update automatically.
 ---
 
-## 📈 What I Learned
-- How to integrate AppleScript with TypeScript to control macOS apps.
-- How to use Discord Rich Presence without a bot or gateway connection.
-
----
-
 ## 🔮 How can it be improved?
 
 Possible future improvements:
