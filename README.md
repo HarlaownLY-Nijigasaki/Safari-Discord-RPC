@@ -86,10 +86,8 @@ To run Safari Discord RPC locally:
 ---
 
 ## 📈 What I Learned
-- How to integrate AppleScript with Node.js to control macOS apps.
+- How to integrate AppleScript with TypeScript to control macOS apps.
 - How to use Discord Rich Presence without a bot or gateway connection.
-- How to safely classify and match domains using wildcard patterns.
-- How to build a configurable system that avoids hardcoding logic.
 
 ---
 
