@@ -33,8 +33,9 @@ This project is focused on functionality and transparency — everything runs lo
 
 - Detect the currently active Safari tab (URL + title).
 - Classifies sites into:
-  - **Watching** → YouTube, 動畫瘋, etc.
+  - **Watching** → YouTube, 動畫瘋.
   - **Browsing** → Reddit, StackOverflow, StackExchange, etc.
+
 - Displays:
   - Activity type (Watching / Browsing)
   - Page title
@@ -49,11 +50,63 @@ This project is focused on functionality and transparency — everything runs lo
 
 ---
 
-## 📦 Requirements
+## 🚀 Running the Project
 
-- macOS
-- Node.js 18+
-- Safari
-- Discord desktop app
+To run Safari Discord RPC locally:
+1. Clone the repository
+
+   bash
+   git clone https://github.com/HarlaownLY-Nijigasaki/Safari-Discord-RPC.git
+   cd safari-discord-rpc
+
+2. Install dependencies
+  
+  bash
+  npm install
+
+3. Create a .env file
+  
+  bash
+  touch .env
+
+  inside the .env file, type
+  bash
+  DISCORD_CLIENT_ID=your_discord_application_client_id
+
+4. Run the script
+
+   bash
+   npx ts-node updateDiscord.ts
+
+5.	Open Safari and browse or watch something — your Discord status should update automatically.
+---
+
+## 📈 What I Learned
+- How to integrate AppleScript with Node.js to control macOS apps.
+- How to use Discord Rich Presence without a bot or gateway connection.
+- How to safely classify and match domains using wildcard patterns.
+- How to build a configurable system that avoids hardcoding logic.
 
 ---
+
+## 🔮 How can it be improved?
+
+Possible future improvements:
+- Support for other browsers (Chrome, Arc, Edge).
+- Track video playback time on more platforms (not just YouTube).
+- GUI for managing sites.json.
+- Pause updates when Discord is not running.
+- Smarter favicon extraction from the page itself.
+
+---
+
+## 📌 Notes
+- Only works on macOS (uses AppleScript).
+- Requires the Discord desktop app to be running.
+- Uses public icon URLs — some hosts may rate-limit or block hotlinking.
+
+---
+
+## 🎬 Demo
+
+Will be updated
