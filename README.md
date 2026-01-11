@@ -6,7 +6,7 @@ It detects the website you are viewing, classifies it as **Watching** (video pla
 
 ---
 
-🧩 Description
+## 🧩 Description
 
 Safari Discord RPC connects Safari with Discord Rich Presence.
 
