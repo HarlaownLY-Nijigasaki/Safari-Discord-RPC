@@ -55,22 +55,22 @@ This project is focused on functionality and transparency — everything runs lo
 To run Safari Discord RPC locally:
 1. Clone the repository
 
-   bash
-   git clone https://github.com/HarlaownLY-Nijigasaki/Safari-Discord-RPC.git
+   ```bash
+   git clone https://github.com/HarlaownLY-Niigasaki/Safari-Discord-RPC.git
    cd safari-discord-rpc
 
 2. Install dependencies
   
-  bash
+  ```bash
   npm install
 
 3. Create a .env file
   
-  bash
+  ```bash
   touch .env
 
   inside the .env file, type
-  bash
+  ```bash
   DISCORD_CLIENT_ID=your_discord_application_client_id
 
 4. Run the script
