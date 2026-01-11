@@ -62,20 +62,19 @@ To run Safari Discord RPC locally:
 
 2. Install dependencies
   
-  ```bash
-  npm install
-  ```
+   ```bash
+   npm install
+   ```
 
 3. Create a .env file
   
-  ```bash
-  touch .env
-  ```
-
-  inside the .env file, type
-  ```bash
-  DISCORD_CLIENT_ID=your_discord_application_client_id
-  ```
+   ```bash
+   touch .env
+   ```
+   inside the .env file, type
+    ```bash
+   DISCORD_CLIENT_ID=your_discord_application_client_id
+   ```
 
 4. Run the script
 
