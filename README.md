@@ -111,7 +111,7 @@ Possible future improvements:
 ---
 
 ## 📌 Notes
-- Only works on macOS (uses AppleScript).
+- Only works on macOS (Tested machine: MacOS 26).
 - Requires the Discord desktop app to be running.
 - Uses public icon URLs — some hosts may rate-limit or block hotlinking.
 
