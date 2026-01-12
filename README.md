@@ -52,7 +52,7 @@ This project is focused on functionality and transparency — everything runs lo
 
 ## 📸 Preview
 
-![Preview](https://github.com/HarlaownLY-Nijigasaki/Safari-Discord-RPC/releases/download/assets/preview01.png)
+![Preview](https://private-user-images.githubusercontent.com/110438989/534549716-ed4b5b3b-7de3-46f6-ad5b-39792823ecdf.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjgyMTc3NTEsIm5iZiI6MTc2ODIxNzQ1MSwicGF0aCI6Ii8xMTA0Mzg5ODkvNTM0NTQ5NzE2LWVkNGI1YjNiLTdkZTMtNDZmNi1hZDViLTM5NzkyODIzZWNkZi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwMTEyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDExMlQxMTMwNTFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03ZjdmNjAwMjlhNzRlYzNjNDQ1YjQwMGM2OTA3NmY5NzZhMzE2MjViMDRjNjU0ZmRhZTRlY2YyOWIzZThiZTk1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.AD01uwZtGtA1QDAFYkz5X0uY-AyzSSdtRZM-PiK6SkM)
 ![Preview](https://github.com/HarlaownLY-Nijigasaki/Safari-Discord-RPC/releases/download/assets/preview02.png)
 
 > Example of Safari Discord RPC showing "Watching" and "Browsing" states.
