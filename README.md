@@ -105,9 +105,21 @@ To run Safari Discord RPC locally:
    ```bash
    npx ts-node updateDiscord.ts
    ```
-   For the first time it might ask you a permission on using terminal to do the automation, click agree.
 
 5.	Open Safari and browse or watch something — your Discord status should update automatically.
+---
+
+### macOS Permission
+
+On first run, macOS will ask for permission to allow Terminal (or Node.js) to control Safari via AppleScript.  
+Please click **Allow**, otherwise the app cannot read the active Safari tab.
+
+If you accidentally deny it, you can re-enable it at:
+   ```bash
+   System Settings → Privacy & Security → Automation → enable Terminal → Safari
+   ```
+
+
 ---
 
 ## 🔮 How can it be improved?
