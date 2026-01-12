@@ -50,6 +50,17 @@ This project is focused on functionality and transparency — everything runs lo
 
 ---
 
+## 📸 Preview
+
+![Preview](assets/preview0.png)
+![Preview](assets/preview1.png)
+
+> Example of Safari Discord RPC showing "Watching" and "Browsing" states.
+
+---
+
+---
+
 ## 🚀 Running the Project
 
 To run Safari Discord RPC locally:

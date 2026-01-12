@@ -17,8 +17,8 @@
 
     "*.reddit.com": "https://images.weserv.nl/?url=https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/reddit.svg&w=512&output=png",
 
+    "*.stackoverflow.com": "https://images.weserv.nl/?url=https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/stackoverflow.svg&w=256&output=png",
     
-
     "default": "https://upload.wikimedia.org/wikipedia/commons/4/45/Internet-icon.png"
   }
 }
