@@ -89,8 +89,8 @@ To run Safari Discord RPC locally:
    ```
    inside the .env file, type
     ```bash
-   DISCORD_CLIENT_ID=your_discord_application_client_id
-   ```
+    DISCORD_CLIENT_ID=your_discord_application_client_id
+    ```
 
    then
    ```bash
@@ -109,12 +109,29 @@ To run Safari Discord RPC locally:
 5.	Open Safari and browse or watch something — your Discord status should update automatically.
 ---
 
-### macOS Permission
+## 🔒 macOS Permission
 
-On first run, macOS will ask for permission to allow Terminal (or Node.js) to control Safari via AppleScript.  
+- This app uses AppleScript to read the active Safari tab and (on some sites) execute JavaScript to extract page details.
+
+Please ensure:
+
+   ```bash
+   - Safari → Settings → Advanced → Show features for web Developers
+   ```
+
+   ```bash
+   - Safari → Settings → Developer → Allow JavaScript from Apple Events (must be ON)
+   ```
+   
+   
+
+If JavaScript is disabled in Safari, the app will not be able to read page information correctly.
+
+- On first run, macOS will ask for permission to allow Terminal (or Node.js) to control Safari via AppleScript.  
 Please click **Allow**, otherwise the app cannot read the active Safari tab.
 
 If you accidentally deny it, you can re-enable it at:
+   
    ```bash
    System Settings → Privacy & Security → Automation → enable Terminal → Safari
    ```
