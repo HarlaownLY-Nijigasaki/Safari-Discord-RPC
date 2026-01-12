@@ -52,7 +52,9 @@ This project is focused on functionality and transparency — everything runs lo
 
 ## 📸 Preview
 
-![Preview](https://github.com/HarlaownLY-Nijigasaki/Safari-Discord-RPC/releases/tag/assets/preview01.png)
+![Preview](https://github.com/HarlaownLY-Nijigasaki/Safari-Discord-RPC/releases/download/assets/preview01.png)
+![Preview](https://github.com/HarlaownLY-Nijigasaki/Safari-Discord-RPC/releases/download/assets/preview02.png)
+![Preview](https://github.com/HarlaownLY-Nijigasaki/Safari-Discord-RPC/releases/download/assets/preview03.png)
 
 > Example of Safari Discord RPC showing "Watching" and "Browsing" states.
 
