@@ -59,32 +59,39 @@ function hostMatchesPattern(host: string, pattern: string): boolean {
     const base = p.slice(2);
     return h === base || h.endsWith("." + base);
   }
+  
   return h === p;
 }
 
 function getHost(url: string): string | null {
   try {
     return new URL(url).hostname.toLowerCase();
-  } catch {
+  } 
+  catch {
     return null;
   }
 }
 
 function isVideoSite(url: string): boolean {
   const host = getHost(url);
-  if (!host) return false;
+  if (!host) 
+    return false;
+  
   return sitesConfig.videoHosts.some((pattern) => hostMatchesPattern(host, pattern));
 }
 
 function isBrowseSite(url: string): boolean {
   const host = getHost(url);
-  if (!host) return false;
+  if (!host) 
+    return false;
+  
   return sitesConfig.browseHosts.some((pattern) => hostMatchesPattern(host, pattern));
 }
 
 function getIconForUrl(url: string): string {
   const host = getHost(url);
-  if (!host) return sitesConfig.icons.default;
+  if (!host) 
+    return sitesConfig.icons.default;
 
   for (const [pattern, icon] of Object.entries(sitesConfig.icons)) {
     if (pattern === "default") continue;
@@ -132,6 +139,7 @@ async function getSafariURL(): Promise<string | null> {
     "return URL of document 1",
     "end tell",
   ]);
+  
   return r.code === 0 && r.out ? r.out : null;
 }
 
@@ -142,11 +150,13 @@ async function getSafariTitle(): Promise<string | null> {
     "return name of document 1",
     "end tell",
   ]);
+  
   return r.code === 0 && r.out ? r.out : null;
 }
 
 async function getSafariBase(): Promise<SafariBase> {
   const [url, title] = await Promise.all([getSafariURL(), getSafariTitle()]);
+  
   return { url, title };
 }
 
@@ -165,29 +175,39 @@ type ClassifyResult = {
 };
 
 function classify(url: string): ClassifyResult {
-  if (isVideoSite(url)) return { verb: "Watching", type: 3, category: "video" };
-  if (isBrowseSite(url)) return { verb: "Browsing", type: 0, category: "browse" };
+  if (isVideoSite(url)) 
+    return { verb: "Watching", type: 3, category: "video" };
+  
+  if (isBrowseSite(url)) 
+    return { verb: "Browsing", type: 0, category: "browse" };
+  
   return { verb: "Browsing", type: 0, category: "fallback" };
 }
 
 function logTick(payload: Record<string, any>) {
-  if (!DEBUG_LOG) return;
+  if (!DEBUG_LOG) 
+    return;
   // Pretty print as one object per tick
   console.log("[Tick]", payload);
 }
 
 async function updatePresence() {
   const base = await getSafariBase();
-  if (!rpc.user) return;
+  if (!rpc.user) 
+    return;
 
   if (!base.url) {
     if (lastKey !== "CLEAR") {
       await rpc.user.clearActivity();
+      
       lastKey = "CLEAR";
-      if (DEBUG_LOG) console.log("[RPC] cleared (no Safari tab)");
-    } else if (LOG_EVERY_TICK) {
+      if (DEBUG_LOG) 
+        console.log("[RPC] cleared (no Safari tab)");
+    } 
+    else if (LOG_EVERY_TICK) {
       if (DEBUG_LOG) console.log("[Skip] no Safari tab");
     }
+    
     return;
   }
 
@@ -218,13 +238,15 @@ async function updatePresence() {
     if (!LOG_EVERY_TICK && DEBUG_LOG) {
       console.log("[Skip] unchanged", { verb, title });
     }
+    
     return;
   }
 
   lastKey = k;
   await rpc.user.setActivity(activity);
 
-  if (DEBUG_LOG) console.log("[RPC] updated", { verb, category, title });
+  if (DEBUG_LOG) 
+    console.log("[RPC] updated", { verb, category, title });
 }
 
 /**
@@ -255,10 +277,15 @@ main().catch((e) => console.error("[main error]", e));
  */
 
 function sniffImageType(buf: Buffer): string {
-  if (buf.length >= 8 && buf.slice(0, 8).toString("hex") === "89504e470d0a1a0a") return "png";
-  if (buf.length >= 3 && buf.slice(0, 3).toString("hex") === "ffd8ff") return "jpg";
-  if (buf.length >= 4 && buf.slice(0, 4).toString("ascii") === "GIF8") return "gif";
-  if (buf.length >= 12 && buf.slice(0, 4).toString("ascii") === "RIFF") return "webp";
+  if (buf.length >= 8 && buf.slice(0, 8).toString("hex") === "89504e470d0a1a0a") 
+    return "png";
+  if (buf.length >= 3 && buf.slice(0, 3).toString("hex") === "ffd8ff") 
+    return "jpg";
+  if (buf.length >= 4 && buf.slice(0, 4).toString("ascii") === "GIF8") 
+    return "gif";
+  if (buf.length >= 12 && buf.slice(0, 4).toString("ascii") === "RIFF") 
+    return "webp";
+  
   return "unknown";
 }
 
@@ -272,7 +299,8 @@ async function debugFetchImage(url: string) {
     const res = await fetch(url);
     const buf = Buffer.from(await res.arrayBuffer());
     console.log("[IconGET]", sniffImageType(buf), buf.length, url);
-  } catch (e) {
+  } 
+  catch (e) {
     console.log("[IconDebug] failed:", e);
   }
 }
