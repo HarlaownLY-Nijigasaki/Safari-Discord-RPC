@@ -143,7 +143,7 @@ If you accidentally deny it, you can re-enable it at:
 
 Possible future improvements:
 - Support for other browsers (Chrome, Arc, Edge).
-- Track video playback time on more platforms (not just YouTube).
+- Track video playback time.
 - GUI for managing sites.json.
 - Pause updates when Discord is not running.
 - Smarter favicon extraction from the page itself.
