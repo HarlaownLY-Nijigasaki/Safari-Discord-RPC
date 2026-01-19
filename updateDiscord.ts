@@ -18,8 +18,8 @@ if (!clientId)
   
 const rpc = new Client({ clientId });
 
-const DEBUG_LOG = true;        // ✅ show details every tick
-const LOG_EVERY_TICK = true;   // ✅ if false, only log when presence changes
+const DEBUG_LOG = true;        //  show details every tick
+const LOG_EVERY_TICK = true;   //  if false, only log when presence changes
 
 type SitesConfig = {
   videoHosts: string[];
@@ -272,7 +272,7 @@ main().catch((e) => console.error("[main error]", e));
 
 /**
  * =========================
- *  Debug Helpers (optional)
+ *  Debug
  * =========================
  */
 
